@@ -27,15 +27,15 @@ public class Student {
 		this.age = age;
 	}
 	
-	public String setLastName() {
+	public String getLastName() {
 		return lastName;
 	}
 	
-	public String setFirstName() {
+	public String getFirstName() {
 		return firstName;
 	}
 	
-	public int setAge() {
+	public int getAge() {
 		return age;
 	}
 }

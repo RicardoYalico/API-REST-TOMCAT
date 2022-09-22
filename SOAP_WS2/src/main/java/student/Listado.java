@@ -15,8 +15,8 @@ public class Listado {
 		Random random = new Random();
 		
 		for(int i=0; i<3; i++) {
-			String tempFirstName = firstNames [random.nextInt(firstNames.length)];
-			String tempLasttName = firstNames [random.nextInt(lastNames.length)];
+			String tempFirstName = firstNames[random.nextInt(lastNames.length)];
+			String tempLasttName = lastNames[random.nextInt(firstNames.length)];
 			
 			int age = 18 + random.nextInt(20);
 			
@@ -26,7 +26,7 @@ public class Listado {
 		}
 		String cadena = "";
 		for (Student temp: studentList) {
-			cadena = cadena + temp;
+			cadena = cadena + (temp.getFirstName()+" "+temp.getLastName()+" "+temp.getAge()+" ");
 		}
 		return cadena;
 	}

@@ -14,7 +14,7 @@ public class Asistencia {
 	@Produces(MediaType.TEXT_XML)
 	public String mostrarXML() {
 	String response = "<?xml version = '1.0' ?>"+
-	"<listar>"+listado.listar()+"</listar>";
+	"<lista>"+listado.listar()+"</lista>";
 		return response;
 	}
 
